@@ -12,6 +12,8 @@
     --border-color: #ECECEC;
     --devider-color: #EEEEEE;
     --footer--color: #2F303A;
+    --icons-color: #AFB1B8;
+    --footer-link: rgba(255, 255, 255, 0.1);
 
 }
 
@@ -144,6 +146,8 @@ a:active {
 }
 
 .tel-link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
@@ -153,6 +157,8 @@ a:active {
 
 
 .mail-link {
+    display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: 40px;
     font-weight: 500;
@@ -160,6 +166,22 @@ a:active {
     line-height: 1.143;
     letter-spacing: 0.02em;
     color: var(--text-color);
+}
+/*mail-tel*/
+
+.mail-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    width: 16px;
+    height: 12px;
+}
+
+
+.tel-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    width: 10px;
+    height: 16px;
 }
 
 
@@ -169,16 +191,15 @@ a:active {
 /*---------HERO---------*/
 
 .hero {
-
+    background-color: var(--footer--color);
     padding-top: 200px;
     padding-bottom: 280px;
-    background-color: var(--footer--color);
     flex-grow: 1;
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-    url("../images/hero/baner.jpg");
-
+            rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero/img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -265,6 +286,21 @@ a:active {
 }
 
 
+
+.feauters-charact {
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--back-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.charact-decor {
+    width: 70px;
+    height: 70px;
+}
+
 /*---------end features---------*/
 
 /*---------ABOUT---------*/
@@ -348,13 +384,128 @@ a:active {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+
+.person-text {
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-team-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-team-link {
+    fill: var(--icons-color);
+}
+
+.social-icons {
+    width: 20px;
+    height: 20px;
+}
+
+.social-link:hover,
+.social-link:focus,
+.social-icons:hover,
+.social-icons:focus {
+    background-color: var(--accent-color);
+    fill: var(--bright-color);
+}
 /*---------END TEAM---------*/
+
+
+/*-clients-*/
+
+.clients {
+
+padding-top: 94px;
+padding-bottom: 94px;
+
+}
+
+.clients-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+}
+
+.clients-link {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    fill: var(--icons-color);
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icon-logo1 {
+    width: 44px;
+    height: 49px;
+}
+
+.icon-logo2 {
+    width: 40px;
+    height: 52px;
+}
+
+.icon-logo3 {
+    width: 41px;
+    height: 43px;
+}
+
+.icon-logo4 {
+    width: 80px;
+    height: 42px;
+}
+
+.icon-logo5 {
+    width: 59px;
+    height: 47px;
+}
+
+.icon-logo6 {
+    width: 88px;
+    height: 45px;
+}
+
+
+
+/*-end clients-*/
 
 
 /*----------footer---------*/
 footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
     background-color: var(--footer--color);
 }
 
@@ -384,6 +535,30 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 
 }
+
+footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+
+.footer-title {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--bright-color);
+    text-transform: uppercase;
+}
+
+.social-footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--bright-color);
+    background-color: var(--footer-link);
+}
+
 
 
 /*----------portfolio----------*/
